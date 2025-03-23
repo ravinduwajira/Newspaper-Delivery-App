@@ -1,0 +1,80 @@
+<!-- update_delivery_status_window.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Subscriber Name -->
+    <TextView
+        android:id="@+id/textView_subscriberName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <!-- Delivery Status -->
+    <TextView
+        android:id="@+id/textView_deliveryStatusLabel"
+        android:layout_below="@id/textView_subscriberName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mark Delivery Status"
+        android:padding="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner_deliveryStatus"
+        android:layout_below="@id/textView_deliveryStatusLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Failed Delivery Note -->
+    <TextView
+        android:id="@+id/textView_failedDeliveryNoteLabel"
+        android:layout_below="@id/spinner_deliveryStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Failed Delivery Note"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/editText_note"
+        android:layout_below="@id/textView_failedDeliveryNoteLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Note"
+        android:inputType="textMultiLine"
+        android:enabled="false" />
+
+    <!-- Is Renewal-Reminder Issued -->
+    <TextView
+        android:id="@+id/textView_renewalReminderLabel"
+        android:layout_below="@id/editText_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Is Renewal-Reminder Issued"
+        android:padding="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner_renewalReminder"
+        android:layout_below="@id/textView_renewalReminderLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Update Button -->
+    <Button
+        android:id="@+id/button_update"
+        android:layout_below="@id/spinner_renewalReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+
+    <!-- Close Button -->
+    <ImageButton
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_close_24"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Close" />
+
+</RelativeLayout>

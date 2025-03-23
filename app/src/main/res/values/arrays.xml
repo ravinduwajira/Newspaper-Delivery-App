@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="status_array">
+        <item>Delivered</item>
+        <item>Out for Delivery</item>
+        <item>Delayed</item>
+        <!-- Add more status options if needed -->
+    </array>
+
+</resources>
