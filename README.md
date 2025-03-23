@@ -23,11 +23,11 @@
 
 ## 🚀 Technologies Used
 
-- **Language**: Kotlin / Java (select your choice)
+- **Language**: Java
 - **Database**: SQLite (offline-first capability)
 - **Map Integration**: Google Maps API
 - **Data Sync**: JSON/XML for download/upload
-- **Backend**: Simple API endpoints (Node.js)
+- **Backend**: Simple API endpoints
 
 ---
 
